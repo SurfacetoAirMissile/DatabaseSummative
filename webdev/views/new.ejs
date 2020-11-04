@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs")%>
+
+<h1> Friends List</h1>
+	
+	<form action="/cars" method="POST">
+		<div class="form-group">
+			<label for="make">Make:</label>
+			<input type="text" placeholder="Toyota" name ="make" id="make">
+		</div>
+		<div class="form-group">
+			<label for="model">Model:</label>
+			<input type="text" placeholder="Sprinter" name ="model" id="model">
+		</div>
+		<div class="form-group">
+			<label for="year">Year:</label>
+			<input type="text" placeholder="1987" name ="year" id="year">
+		</div>
+		<div class="form-group">
+			<label for="price">Selling Price:</label>
+			<input type="text" placeholder="$12,000" name ="price" id="price">
+		</div>
+		<div class="form-group">
+			<label for="imageLink">Link to an image of the vehicle:</label>
+			<input type="text" placeholder="https://imagehostingwebsite.com/toyotasprinter1987.jpg" name ="imageLink" id="imageLink">
+		</div>
+		<div class="form-group">
+			<button>Add Car</button>
+		</div>
+	</form>
+	
+<%- include("partials/footer.ejs")%>
